@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  ui:
+    image: ghcr.io/is-team/pharm-bills-ui:latest
+    ports:
+      - "3000:3000"
+
+  transactions-process-service:
+    image: ghcr.io/is-team/transactions-process-service:latest
+    ports:
+      - "8000:8000"
